@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 10px;
+  --1rem: 1rem;
+  --color-white: white;
+  --color-black: black;
+  --color-orange: orange;
+  --color-lightblue: lightblue;
+  --color-gold: gold;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  /* background-color: rgb(54, 54, 54); */
+  user-select: none;
+}
+img {
+  width: 100%;
+  width: 80px;
+}
+p,
+a,
+li,
+ol,
+ul,
+th,
+td,
+table,
+button {
+  font-size: 1.5rem;
+}
+i,
+button {
+  user-select: none;
+}
+th,
+td,
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  user-select: none;
+}
+th {
+  background-color: aqua;
+}
+a {
+  display: block;
+  /* background-color: blue; */
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+li,
+ul,
+ol {
+  list-style: none;
+}
+label {
+  cursor: pointer;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* container and width */
+.container-1200px {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container-1024px {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.container-1500px {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* width */
+.width-100px {
+  width: 100px;
+}
+.width-80px {
+  width: 80px;
+}
+.width-70px {
+  width: 70px;
+}
+.width-25px {
+  width: 25px;
+}
+.width-30px {
+  width: 30px;
+}
+.width-65px {
+  width: 65px;
+}
+.width-100per {
+  width: 100%;
+}
+.max-width-500px {
+  max-width: 500px;
+}
+.max-width-300px {
+  max-width: 300px;
+}
+.max-width-700px {
+  max-width: 700px;
+}
+.max-width-400px {
+  max-width: 400px;
+}
+/* height */
+.height-50px {
+  height: 50px;
+}
+.height-35px {
+  height: 35px;
+}
+.height-30px {
+  height: 30px;
+}
+.height-400px {
+  height: 400px;
+}
+.height-100per {
+  height: 100%;
+}
+
+/* padding */
+.padding-1rem {
+  padding: 1rem;
+}
+.padding-2rem {
+  padding: 2rem;
+}
+.padding-left-1rem {
+  padding-left: 1rem;
+}
+.btn-padding1 {
+  padding: 0.5rem 1rem;
+}
+.btn-padding2 {
+  padding: 0.7rem 1.5rem;
+}
+.padding-left-o5rem {
+  padding-left: 0.5rem;
+}
+.padding-left-o3rem {
+  padding-left: 0.3rem;
+}
+/* margin */
+
+.margin-y-1rem {
+  margin: 1rem 0;
+}
+.margin-2rem {
+  margin: 2rem;
+}
+.margin-footer {
+  margin-top: 3.5rem;
+}
+.margin-y {
+  margin: 5rem auto;
+}
+.margin-y-2rem {
+  margin: 2rem 0.5rem;
+}
+.margin-right-1rem {
+  margin-right: 1rem;
+}
+.margin-left-1rem {
+  margin-left: 1rem;
+}
+.margin-auto {
+  margin: 0 auto;
+}
+/* font size */
+.font-size-2rem {
+  font-size: 2rem;
+}
+.font-size-1o7rem {
+  font-size: 1.7rem;
+}
+.font-size-2o5rem {
+  font-size: 2.5rem;
+}
+.font-size-3rem {
+  font-size: 3rem;
+}
+
+/* color */
+.color-white {
+  color: var(--color-white);
+}
+.color-black {
+  color: var(--color-black);
+}
+.color-orange {
+  color: var(--color-orange);
+}
+.color-lightblue {
+  color: var(--color-lightblue);
+}
+.color-gold {
+  color: var(--color-gold);
+}
+.color-lightgray {
+  color: rgb(107, 107, 107);
+}
+.color-green {
+  color: green;
+}
+.color-red {
+  color: red;
+}
+/* border raduis */
+.raduis-15px {
+  border-radius: 15px;
+}
+.raduis-20px {
+  border-radius: 20px;
+}
+.raduis-10px {
+  border-radius: 10px;
+}
+
+/* background */
+.background-color-none {
+  background-color: transparent;
+}
+
+/* border */
+.border1 {
+  border: 1px solid black;
+}
+.border-bottom-dashed {
+  border-bottom: 2px dashed rgb(216, 216, 216);
+}
+/* border color */
+.border-orange {
+  border-color: var(--color-orange);
+}
+
+/* text transform */
+.text-capital {
+  text-transform: capitalize;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* position */
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-sticky {
+  position: sticky;
+}
+
+/* background colr */
+.background-color-orange {
+  background-color: var(--color-orange);
+}
+.background-color-transparent {
+  background-color: transparent;
+}
+.background-color-white {
+  background-color: var(--color-white);
+}
+.background-color-black {
+  background-color: black;
+}
+.background-color-green {
+  background-color: rgb(2, 156, 2);
+}
+.background-color-red {
+  background-color: red;
+}
+
+/* display */
+.display-none {
+  display: none;
+}
+.display-block {
+  display: block;
+}
+.display-flex {
+  display: flex;
+}
+.display-grid {
+  display: grid;
+}
+.grid-template-column2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* align item */
+.align-item-center {
+  align-items: center;
+}
+.justify-content-spacebetween {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+/* text alig */
+.text-align-center {
+  text-align: center;
+}
+/* gap */
+.gap-1rem {
+  gap: 1rem;
+}
+.gap-1o5rem {
+  gap: 1.5rem;
+}
+.gap-2rem {
+  gap: 2rem;
+}
+
+/* line height */
+.line-height {
+  line-height: 20px;
+}
+
+/* cursor */
+.cursor {
+  cursor: pointer;
+}
+/* position element */
+.top-0 {
+  top: 0;
+}
+.z-index-50 {
+  z-index: 50;
+}
+
+/* clip */
+.img-clip {
+  object-fit: cover;
+}

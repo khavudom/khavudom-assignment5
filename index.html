@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khav Odom E-commerce</title>
+    <link
+      rel="shortcut icon"
+      href="./image/icon/fa icon/_1274cc20-15a5-4a8f-a1d1-023e90d6c72f.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- <link rel="stylesheet" href="./style/navbar.css" /> -->
+    <link rel="stylesheet" href="./style/animation.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+    <link rel="stylesheet" href="./style/active.css" />
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+
+    <nav
+      class="navigation-bar width-100% border-bottom-dashed position-sticky top-0 background-color-white"
+    >
+      <div
+        class="navigation-container display-flex justify-content-spacebetween align-item-center container-1200px padding-1rem"
+      >
+        <figure class="left-bar">
+          <div class="nav-img-wrapper">
+            <img src="./image/icon/fa icon/dshop.png" alt="bar icon" />
+          </div>
+        </figure>
+        <div class="right-bar list-items display-flex gap-1rem">
+          <button
+            class="position-relative product-item background-color-transparent navigation-item active"
+          >
+            Home
+          </button>
+          <button
+            class="khmer-products position-relative product-item background-color-transparent nav-products navigation-item"
+          >
+            Khmer Products <i class="fa-solid fa-chevron-down"></i>
+            <ol class="khmer-products-list display-none position-absolute">
+              <li class="item change">
+                <a class="not-be-allow padding-1rem" href="#khmer-men-products"
+                  >Men's</a
+                >
+              </li>
+              <li class="item change">
+                <a href="#khmer-women-products" class="padding-1rem">Women</a>
+              </li>
+              <li class="item change">
+                <a href="#khmer-keepsake" class="padding-1rem">keepsake</a>
+              </li>
+            </ol>
+          </button>
+          <button
+            class="moder-products position-relative product-item background-color-transparent nav-products navigation-item"
+          >
+            Modern Products <i class="fa-solid fa-chevron-down"></i>
+            <ol class="moder-products-list position-absolute display-none">
+              <li class="item change">
+                <a href="#modern-men-products" class="padding-1rem">Men</a>
+              </li>
+              <li class="item change">
+                <a href="#modern-women-products" class="padding-1rem">Women</a>
+              </li>
+              <li class="item change">
+                <a href="#modern-kid-products" class="padding-1rem">Kid</a>
+              </li>
+            </ol>
+          </button>
+          <button
+            class="view-all-produts product-item background-color-transparent display-block navigation-item"
+          >
+            Products
+          </button>
+          <ul>
+            <aside id="nav-setting">
+              <button class="background-color-transparent">
+                <input type="checkbox" id="nightmode" class="display-none" />
+                <label
+                  for="nightmode"
+                  class="background-color-white position-relative border1 border-orange width-65px height-30px display-block raduis-20px display-flex align-item-center padding-left-o3rem check-style"
+                ></label>
+              </button>
+            </aside>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars font-size-2o5rem cursor display-none"></i>
+      </div>
+    </nav>
+    <!-- single prodcuts and all products -->
+    <div class="singleProducts">
+      <main class="display-single-product padding-1rem display-none">
+        <nav class="navigation-bar2 width-100per position-relative">
+          <div class="btn-wrapper display-flex gap-1rem padding-1rem">
+            <button
+              class="font-size-1o7rem btn-padding2 background-color-none border1 border-orange color color-orange hover-orange text-capital"
+            >
+              All Products
+            </button>
+            <button
+              class="font-size-1o7rem btn-padding2 background-color-none border1 border-orange color color-orange hover-orange text-capital"
+            >
+              Khmer Products
+            </button>
+            <button
+              class="font-size-1o7rem btn-padding2 background-color-none border1 border-orange color color-orange hover-orange text-capital"
+            >
+              Modern Products
+            </button>
+          </div>
+        </nav>
+        <ul class="single-product-list"></ul>
+      </main>
+    </div>
+    <!-- hero section -->
+    <section class="padding-1rem slider-container container-1500px">
+      <article class="position-relative"></article>
+      <article class="position-relative"></article>
+      <article class="position-relative"></article>
+      <article class="position-relative"></article>
+      <article class="position-relative"></article>
+      <article class="position-relative"></article>
+    </section>
+
+    <!-- product section -->
+    <h2 class="font-size-3rem margin-y color-lightgray text-align-center">
+      High Light Products
+    </h2>
+
+    <!-- popular products -->
+    <div
+      class="padding-2rem highlight-product-container-section"
+      id="khmer-men-products"
+    >
+      <div class="container-1500px highlight-product-button">
+        <h1 class="highlight-product-title container-1200px">Men's</h1>
+      </div>
+      <div class="wrapper container-1500px">
+        <ul class="carousel"></ul>
+      </div>
+      <div
+        class="container-1500px highlight-product-button lighlight-button-wrapper"
+      >
+        <button
+          class="font-size-1o7rem btn-padding2 background-color-none border1 border-orange color color-orange hover-orange text-capital"
+          id="0"
+        >
+          See More
+        </button>
+      </div>
+    </div>
+    <div
+      class="padding-2rem highlight-product-container-section"
+      id="khmer-women-products"
+    >
+      <div class="container-1500px highlight-product-button">
+        <h1 class="highlight-product-title container-1200px">Women's</h1>
+      </div>
+      <div class="wrapper container-1500px">
+        <ul class="carousel"></ul>
+      </div>
+      <div
+        class="container-1500px highlight-product-button lighlight-button-wrapper"
+      >
+        <button
+          id="1"
+          class="font-size-1o7rem btn-padding2 background-color-none border1 border-orange color color-orange hover-orange text-capital"
+        >
+          See More
+        </button>
+      </div>
+    </div>
+    <div
+      class="padding-2rem highlight-product-container-section"
+      id="khmer-keepsake"
+    >
+      <div class="container-1500px highlight-product-button">
+        <h1 class="highlight-product-title container-1200px">Keepsake</h1>
+      </div>
+      <div class="wrapper container-1500px">
+        <ul class="carousel"></ul>
+      </div>
+      <div
+        class="container-1500px highlight-product-button lighlight-button-wrapper"
+      >
+        <button
+          id="2"
+          class="font-size-1o7rem btn-padding2 background-color-none border1 border-orange color color-orange hover-orange text-capital"
+        >
+          See More
+        </button>
+      </div>
+    </div>
+    <div
+      class="padding-2rem highlight-product-container-section"
+      id="modern-men-products"
+    >
+      <div class="container-1500px highlight-product-button">
+        <h1 class="highlight-product-title container-1200px">Men's</h1>
+      </div>
+      <div class="wrapper container-1500px">
+        <ul class="carousel"></ul>
+      </div>
+      <div
+        class="container-1500px highlight-product-button lighlight-button-wrapper"
+      >
+        <button
+          id="3"
+          class="font-size-1o7rem btn-padding2 background-color-none border1 border-orange color color-orange hover-orange text-capital"
+        >
+          See More
+        </button>
+      </div>
+    </div>
+    <div
+      class="padding-2rem highlight-product-container-section"
+      id="modern-women-products"
+    >
+      <div class="container-1500px highlight-product-button">
+        <h1 class="highlight-product-title container-1200px">Women's</h1>
+      </div>
+      <div class="wrapper container-1500px">
+        <ul class="carousel"></ul>
+      </div>
+      <div
+        class="container-1500px highlight-product-button lighlight-button-wrapper"
+      >
+        <button
+          id="4"
+          class="font-size-1o7rem btn-padding2 background-color-none border1 border-orange color color-orange hover-orange text-capital"
+        >
+          See More
+        </button>
+      </div>
+    </div>
+    <div
+      class="padding-2rem highlight-product-container-section"
+      id="modern-kid-products"
+    >
+      <div class="container-1500px highlight-product-button">
+        <h1 class="highlight-product-title container-1200px">Kid's</h1>
+      </div>
+      <div class="wrapper container-1500px">
+        <ul class="carousel"></ul>
+      </div>
+      <div
+        class="container-1500px highlight-product-button lighlight-button-wrapper"
+      >
+        <button
+          id="5"
+          class="font-size-1o7rem btn-padding2 background-color-none border1 border-orange color color-orange hover-orange text-capital"
+        >
+          See More
+        </button>
+      </div>
+    </div>
+
+    <!-- suscriber -->
+    <div
+      class="display-flex container-1500px padding-1rem subscription-section gap-2rem align-item-center margin-y-2rem"
+    >
+      <div>
+        <h3 class="font-size-3rem">By Subscribing To Get 30% Off</h3>
+        <p class="margin-y-1rem">
+          Details to details is what makes Hexashop different from the other
+          themes.
+        </p>
+        <form class="form-subscription">
+          <div>
+            <input
+              class="input-form"
+              minlength="3"
+              maxlength="30"
+              type="text"
+              pattern="[a-zA-Z\s]*"
+              placeholder="Your Full Name"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+              placeholder="Your Email Address"
+              required
+              class="input-form"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn-padding1 font-size-2rem border1 background-color-transparent hover-white color-black"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+      <div class="display-grid grid-template-column2 gap-2rem location-part">
+        <div>
+          <h4>Store Location:</h4>
+          <p>Phnom Penh, Cambodia</p>
+        </div>
+        <div>
+          <h4>Work Hours:</h4>
+          <p>8:00AM - 10:00PM</p>
+        </div>
+        <div>
+          <h4>Email:</h4>
+          <p>dshop12@gmail.com</p>
+        </div>
+        <div>
+          <h4>Phone:</h4>
+          <p>0965432221</p>
+        </div>
+        <div>
+          <h4>Our Social Media:</h4>
+          <p>facebook, instagram, X, YouTube, TikTok</p>
+        </div>
+        <div>
+          <h4>Services:</h4>
+          <p>dshop12@gmail.com, 012239855</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- card -->
+    <div class="card-product-container display-none">
+      <div class="shop-showing container-1200px">
+        <h2>D shop</h2>
+        <button
+          class="font-size-1o7rem raduis-20px btn-padding2 background-color-none border1 hover-orange color-orange border-orange text-uppercase"
+          id="d-shop-close-button"
+        >
+          close
+        </button>
+      </div>
+      <article class="container-1200px">
+        <table>
+          <thead class="heading-table">
+            <tr>
+              <th>Product's Name</th>
+              <th>Rreview</th>
+              <th>Size</th>
+              <th>Price</th>
+              <th>Final</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <td>
+                <button
+                  id="click-to-buy"
+                  class="font-size-1o7rem raduis-20px btn-padding2 background-color-none border1 hover-orange color-orange border-orange buy-products"
+                >
+                  Buy Now
+                </button>
+              </td>
+              <td>Categories</td>
+              <td>Total</td>
+              <td>233$</td>
+              <td>
+                <button
+                  class="color-white btn-padding2 font-size-1rem background-color-red hover-red raduis-20px table-delete-button"
+                >
+                  <i class="fa-solid fa-trash table-fa"></i>
+                  <p class="delete-button1 table-clear-all-button">Clear</p>
+                </button>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="padding-1rem information-to-buy">
+          <input type="text" placeholder="Your Location" />
+          <input type="number" placeholder="Your phone number" />
+          <input type="email" placeholder="Your Email" />
+        </div>
+      </article>
+    </div>
+    <!-- card produt -->
+    <button class="cart-button display-none">
+      <p>0</p>
+      <i class="fa-solid fa-cart-shopping"></i>
+    </button>
+    <!-- view product -->
+    <article class="product-view view">
+      <i class="fa-solid fa-circle-xmark"></i>
+      <div class="img-wrapper">
+        <img src="./image/test/baner-right-image-01.jpg" alt="pic" />
+      </div>
+      <div class="product-view-title">
+        <h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non
+          nihil vero amet consequuntur maxime sapiente dignissimos accusantium
+          rerum mollitia doloremque perspiciatis aperiam repellat architecto
+          officia, voluptatum itaque cumque magni!
+        </h3>
+        <p>Price : 124$</p>
+        <p class="discount-price">11$</p>
+      </div>
+    </article>
+    <section class="hidden-background display-none"></section>
+    <!-- rating star -->
+    <div class="rating-star">
+      <i class="fa-solid fa-circle-xmark"></i>
+      <p>What do you thing about our product?</p>
+      <div>
+        <i class="fa-solid fa-star not-allow" id="1"></i>
+        <i class="fa-solid fa-star not-allow" id="2"></i>
+        <i class="fa-solid fa-star not-allow" id="3"></i>
+        <i class="fa-solid fa-star not-allow" id="4"></i>
+        <i class="fa-solid fa-star not-allow" id="5"></i>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="width-100per height-400px margin-footer footer">
+      <div>
+        <aside>
+          <h4>Khmer Products</h4>
+          <a href="#"> Men's Shopping </a>
+          <a href="#"> Women's Shopping </a>
+          <a href="#"> Kid's Shopping </a>
+        </aside>
+        <aside>
+          <h4>Khmer Products</h4>
+          <a href="#"> Men's Shopping </a>
+          <a href="#"> Women's Shopping </a>
+          <a href="#"> Kid's Shopping </a>
+        </aside>
+        <aside>
+          <h4>About Us</h4>
+          <a href="tel:+855964127259"
+            ><i class="fa-solid fa-phone"></i> 0964127259</a
+          >
+          <a href="mailto:dshop12@gmail.com"
+            ><i class="fa-solid fa-envelope"></i>
+            <address style="display: inline">dshop12@gmail.com</address></a
+          >
+          <a
+            href="https://maps.app.goo.gl/nJCFXpeEGjbXp2pL9?g_st=ic"
+            target="_blank"
+            ><i class="fa-solid fa-location-dot"></i> Phnom Penh, Cambodia</a
+          >
+          <a
+            href="https://www.facebook.com/profile.php?id=61554370044745&mibextid=LQQJ4d"
+            target="_blank
+            "
+            ><i class="fa-brands fa-facebook-f"></i> H shop</a
+          >
+        </aside>
+        <aside>
+          <h4>Producer</h4>
+          <h5>Khav Oudom</h5>
+          <a
+            class="not-be-allow"
+            style="display: inline"
+            href="mailto:khavudom.123@gmail.com"
+            ><i class="fa-solid fa-envelope not-edit"></i>
+          </a>
+
+          <em style="display: block">Social Media</em>
+          <div class="producer-social-media">
+            <a
+              class="not-be-allow"
+              href="https://www.facebook.com/profile.php?id=100027816968628&mibextid=9R9pXO"
+              target="_blank"
+              ><i class="fa-brands fa-facebook not-edit"></i
+            ></a>
+            <a
+              class="not-be-allow"
+              href="https://t.me/khavoudom"
+              target="_blank"
+              ><i class="fa-brands fa-telegram not-edit"></i
+            ></a>
+            <a
+              class="not-be-allow"
+              href="https://github.com/RuenChanPiseth"
+              target="_blank"
+              ><i class="fa-brands fa-github not-edit"></i>
+            </a>
+            <a
+              class="not-be-allow"
+              target="_blank"
+              href=" https://www.instagram.com/invites/contact/?i=vuypyplsira8&utm_content=k3kuc45"
+              ><i class="fa-brands fa-square-instagram"></i>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </footer>
+    <a href="#top" class="scroll-top display-none"> click</a>
+    <script type="module" src="./javascript/index.js"></script>
+  </body>
+</html>
